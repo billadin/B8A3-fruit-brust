@@ -4,8 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fruit Brust</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://kit.fontawesome.com/e5572b8fe9.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .poppins {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
 </head>
-<body>
-    
+<body class="poppins">
+    <header class="w-[95%] md:w-[90%] lg:w-[85%] xl:w-[75%] mx-auto">
+        <nav class="my-12 lg:my-14 mx-auto rounded-full md:bg-[#F85559]">
+            <div class="navbar">
+                <!-- Nav links -->
+                <div class="navbar-start hidden lg:flex md:mr-10">
+                    <ul class="menu menu-horizontal text-base xl:text-lg text-[#FFF] flex-nowrap poppins">
+                        <li><a>Home</a></li>
+                        <li><a>About Us</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+                    </ul>
+                </div>
+                <!-- Logo -->
+                <div class="navbar-start lg:navbar-center flex items-center lg:justify-center flex-nowrap">
+                    <img src="/images/logo.png" class="w-14 h-14">
+                    <a class="flex-shrink-0 ml-2 md:ml-3 lg:ml-4 normal-case text-base md:text-xl lg:text-2xl text-[#121212] md:text-[#FFF] md:font-normal lg:font-medium poppins">Fruit Burst</a>
+                </div>
+                <!-- Search field -->
+                <div class="navbar-end">
+                    <div class="relative form-control hidden md:flex">
+                        <input type="text" placeholder="Search here" class="input-sm w-24 md:w-auto rounded-full placeholder:text-[#12121266] lg:mr-5 xl:mr-7" />
+                        <span class="absolute top-1 right-11 text-[#12121266]"><i class="fa-solid fa-magnifying-glass fa-sm"></i></span>
+                    </div>
+                    <div class="dropdown dropdown-end">
+                        <label tabindex="0" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 md:text-white" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </label>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow rounded-box w-52 bg-[#F85559] text-lg text-[#FFF] poppins">
+                            <li><a>Home</a></li>
+                            <li><a>About Us</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>All Fruits</a></li>
+                            <div class="form-control md:hidden">
+                                <input type="text" placeholder="Search here" class="input-sm rounded-full w-44 lg:w-auto my-3 placeholder:text-[#12121266]" />
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
 </body>
 </html>
